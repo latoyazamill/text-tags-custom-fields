@@ -20,17 +20,17 @@ In the example above, a textbox would be created with the value "Acme Co.". Note
 
 ## Allowing a signer to edit pre-set values
 
-** You can't have more than one signer when using this feature.**
+**You can't have more than one signer when using this feature.**
 
 Signer editable text-tag pre-set values use a similar convention to our editable merge fields when sending templates. Use the custom_fields key in the post body of the request to specify the editor index. When using this form of "editable" text tags and don't pass an editor in the custom_fields data, you will receive an error callback after the file is processed. The editor is the signer who can change the pre-set data.
 
 Here is an example with editable pre-set text tag value.
 
-** Example for editable text tag:**
+**Example for editable text tag:**
 
 [text-merge|req|signer0|organization_name] and [sig|req|signer0]
 
-** Usage of custom_fields for the above text tag:**
+**Usage of custom_fields for the above text tag:**
 
 custom_fields:[{"name":"organization_name", "value":"Enter organization name", "editor":"signer1", "required":"true"}]
 
