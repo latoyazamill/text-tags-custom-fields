@@ -1,5 +1,9 @@
 # Text Tags with Custom Fields
 
+## Install Instructions
+
+HelloSign NodeJS SDK: `npm install hello-sign`
+
 ## Sending Text Tags with pre-set values
 
 You have the ability to add pre-set data to the text tag that will be viewed by the signer. To do this, use the word "sender" in place of the word “signer” in the tag. Remember, that if you do this, then the pre-set values you want to use must be sent with the custom_fields param at the time you make the request. If you don't do it you will receive an error callback after the file is processed.
