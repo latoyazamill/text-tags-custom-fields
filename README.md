@@ -8,11 +8,11 @@ In the case you are creating an unclaimed draft, the pre-set values you supply w
 
 **Example text tag:**
 
-[text-merge|req|sender|organization_name] and [sig|req|signer0]
+`[text-merge|req|sender|organization_name]` and `[sig|req|signer0]`
 
 **Usage of custom_fields for the above text tag:**  
 
-custom_fields:[{"name":"organization_name", "value" : "Acme Co."}]
+`custom_fields:[{"name":"organization_name", "value" : "Acme Co."}]`
 
 NodeJS example in file `index.js`
 
@@ -28,11 +28,11 @@ Here is an example with editable pre-set text tag value.
 
 **Example for editable text tag:**
 
-[text-merge|req|signer0|organization_name] and [sig|req|signer0]
+`[text-merge|req|signer0|organization_name]` and `[sig|req|signer0]`
 
 **Usage of custom_fields for the above text tag:**
 
-custom_fields:[{"name":"organization_name", "value":"Enter organization name", "editor":"signer1", "required":"true"}]
+`custom_fields:[{"name":"organization_name", "value":"Enter organization name", "editor":"signer1", "required":"true"}]`
 
 NodeJS example in file `index2.js`
 
