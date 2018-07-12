@@ -6,9 +6,13 @@ You have the ability to add pre-set data to the text tag that will be viewed by 
 
 In the case you are creating an unclaimed draft, the pre-set values you supply will be editable by the requester. Here is an example with pre-set text tag value.
 
-Example text tag: [text-merge|req|sender|organization_name] and [sig|req|signer0]
+**Example text tag:**
 
-Usage of custom_fields for the above text tag: custom_fields:[{"name":"organization_name", "value" : "Acme Co."}]
+[text-merge|req|sender|organization_name] and [sig|req|signer0]
+
+**Usage of custom_fields for the above text tag:**  
+
+custom_fields:[{"name":"organization_name", "value" : "Acme Co."}]
 
 NodeJS example in file `index.js`
 
@@ -16,15 +20,19 @@ In the example above, a textbox would be created with the value "Acme Co.". Note
 
 ## Allowing a signer to edit pre-set values
 
-You can't have more than one signer when using this feature.
+** You can't have more than one signer when using this feature.**
 
 Signer editable text-tag pre-set values use a similar convention to our editable merge fields when sending templates. Use the custom_fields key in the post body of the request to specify the editor index. When using this form of "editable" text tags and don't pass an editor in the custom_fields data, you will receive an error callback after the file is processed. The editor is the signer who can change the pre-set data.
 
 Here is an example with editable pre-set text tag value.
 
-Example for editable text tag: [text-merge|req|signer0|organization_name] and [sig|req|signer0]
+** Example for editable text tag:**
 
-Usage of custom_fields for the above text tag: custom_fields:[{"name":"organization_name", "value":"Enter organization name", "editor":"signer1", "required":"true"}]
+[text-merge|req|signer0|organization_name] and [sig|req|signer0]
+
+** Usage of custom_fields for the above text tag:**
+
+custom_fields:[{"name":"organization_name", "value":"Enter organization name", "editor":"signer1", "required":"true"}]
 
 NodeJS example in file `index2.js`
 
