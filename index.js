@@ -10,11 +10,11 @@ var options = {
   subject: 'Text Tags for Signer',
   message: 'This example is when the text tag is labeled for signer to edit versus sender.',
   signers: [{
-    email_address: 'latoya.williams+1@hellosign.com',
-    name: 'LaToya',
+    email_address: 'jack@example.com',
+    name: 'Jack',
     order: 0
   }],
-  files: ['/Users/latoyawilliams/Downloads/text_tags1_7.pdf'],
+  files: ['text_tags1_7.pdf'],
   use_text_tags: 1,
   hide_text_tags: 1,
   custom_fields: [{
